@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Timer -->
+
+    <p class="timer hidden">10:00</p>
+
+    <!-- Intro -->
+    <div class="container " id="intro">
+        <div class="img">
+            <img src="./img/kerst3.gif" alt="">
+        </div>
+        <div class="text">
+            <h3> Kerst Escaproom </h3>
+        </div>
+        <div class="audio">
+            <audio controls>
+                <source src="./audio/text.mp3" type="audio/ogg">
+
+                <source src="./audio/text.mp3" type="audio/mpeg">
+
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div class="btn-div" id="start">
+            <button id="start-btn">Start</button>
+        </div>
+
+    </div>
+
+    <!-- puzzel_1 -->
+    <div class="container hidden" id="puzzel">
+       
+        <div class="img-question">
+            <img src="./img/question_img.gif" alt="">
+        </div>
+
+        <div class="vraag-con">
+            <h3 class="vraag"> Maak het kerstliedje verder af: it’s the most… </h3>
+
+            <div class="div-input">
+                <input class="question-input" type="text">
+            </div>
+        </div>
+
+        <div class="btn-div">
+            <button id="next-btn">Next</button>
+        </div>
+
+    </div>
+
+    <!-- puzzel_2 -->
+    
+    <div class="container p2  hidden" id="puzzel">
+        <div class="container_puzzle2">
+            <div class="questions">
+                <div class="question1 q">
+                    <p>Beantwoord deze vraag om een andere vraag te genereren! </p>
+                    <h3>Waar komt de Kerstman vandaan?</h3>
+                    <input type="text">
+                    <button>OK</button>
+                </div>
+                <div class="question2 hidden q">
+                    <p>probeer eerst om de keys te vinden, en dan de vraag beantwoorden </p>
+
+                    <p> De antwoord kunt u vinden door goed in dit pagina te zoeken </p>
+                    <h3> In welk jaar werd de "1x" "x3" verzonden?</h3>
+                    <input type="text">
+                    <button>OK</button>
+                </div>
+                 <div class="question3 hidden q">
+                    <p>Gefeliciteerd je hebt de lamp aan gedaan</p>
+                    <h3> Nu vul de key in om door te gaan !</h3>
+                    <input type="text">
+                    <button>OK</button>
+                </div>
+                <div class="question4 hidden q">
+                    <h3> Nu mag je wel door gaan !</h3>
+                </div>
+            </div>
+            
+            <div class="lamp-container">
+                <img src="img/lamp.png" class="lamp">
+                <img src="img/light.png" class="light hidden">
+                <p>Yg3x59bgf</p>
+            </div>
+            
+        </div>
+        <p class="answer" >18<br>eerste</p>
+       
+        <div class="btn-div p-2-next-div">
+            <p class="answer" >43<br>kerstkaart </p>
+            <button  id="next-btn" class="p-2-next">Next</button>
+           
+        </div>
+        
+    </div>
+
+    <!-- puzzel_3 -->
+
+    <div class="container hidden" id="puzzel">
+        <div class="numbers-puzzle-img">
+            <img class="num-img" src="./img/puzzel_img.PNG" alt="">
+
+            
+        </div>
+        <h3> Voer de vier nummers die in de foto zijn in. </h3>
+
+        <div class="inputs">
+            <input type="number" id="num-input">
+            <input type="number" id="num-input">
+            <input type="number" id="num-input">
+            <input type="number" id="num-input">
+        </div>
+
+        <div class="btn-div" >
+            <button id="next-btn">Next</button>
+        </div>
+
+    </div>
+
+    <!-- afsluiting -->
+    <div class="container hidden" id="afsluiting">
+
+        <div class="good-result ">
+            
+            <div class="good-result-div-img">
+                <img src="./img/good_result_img.gif" alt="">
+            </div>
+            <div class="good-result-text">
+                <h1> gefeliciteerd! </h1>
+                <h2>
+                    Je hebt de puzzels goed gemaakt 
+                </h2>
+            </div>
+            
+        </div>
+        <div class="bad-result hidden">
+            
+            <div class="bad-result-div-img">
+                <img src="./img/bad_result_img.jpg" alt="">
+            </div>
+            
+            <p> De tijd is voorbij </p>
+        </div>
+    </div>
+
+    <script type="module" src="./js/script.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- <script src="./js/animation.js"></script> -->
+
+</body>
+
+</html>
